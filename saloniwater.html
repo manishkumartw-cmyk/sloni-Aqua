@@ -1,0 +1,443 @@
+<!doctype html>
+<html lang="hi" data-theme="light">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>सलोनी वॉटर सप्लायर | इंदौर, बक्सर</title>
+<meta name="description" content="सलोनी वॉटर सप्लायर – शुद्ध पीने का पानी 250ml, 500ml, 1 लीटर और 20 लीटर जार। घर तक डिलीवरी। संपर्क: 8789258851, 7091852851">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&family=Noto+Sans+Devanagari:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#f3f9ff; --bg2:#e4f1ff; --card:#ffffff; --text:#0c2340; --muted:#4d6585;
+  --primary:#0a7bdc; --primary2:#18b6e8; --accent:#e63946; --gold:#ffd23f;
+  --border:#d2e5f7; --shadow:0 10px 30px rgba(10,123,220,.12); --glass:rgba(255,255,255,.7);
+}
+:root[data-theme="dark"]{
+  --bg:#07111f; --bg2:#0b1b30; --card:#0f2440; --text:#e8f3ff; --muted:#93acc9;
+  --primary:#3aa0ff; --primary2:#22d3ee; --accent:#ff5a67; --gold:#ffd23f;
+  --border:#1c3558; --shadow:0 10px 30px rgba(0,0,0,.45); --glass:rgba(15,36,64,.7);
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:"Poppins","Noto Sans Devanagari",system-ui,sans-serif;background:var(--bg);color:var(--text);line-height:1.6;transition:background .3s,color .3s;overflow-x:hidden}
+a{color:inherit;text-decoration:none}
+.wrap{width:min(1120px,100% - 32px);margin-inline:auto}
+section{padding:72px 0}
+h1,h2,h3{line-height:1.2;font-weight:800}
+.grad{background:linear-gradient(90deg,var(--primary),var(--primary2));-webkit-background-clip:text;background-clip:text;color:transparent}
+
+/* header */
+header{position:sticky;top:0;z-index:50;background:var(--glass);backdrop-filter:blur(14px);border-bottom:1px solid var(--border)}
+.nav{display:flex;align-items:center;justify-content:space-between;height:66px;gap:12px}
+.logo{display:flex;align-items:center;gap:10px;font-weight:800;font-size:1.15rem}
+.logo i{width:36px;height:36px;border-radius:50% 50% 50% 8px;background:linear-gradient(135deg,var(--primary2),var(--primary));display:grid;place-items:center;transform:rotate(-45deg)}
+.logo i svg{transform:rotate(45deg)}
+.links{display:flex;gap:26px;font-weight:500;font-size:.95rem;color:var(--muted)}
+.links a:hover{color:var(--primary)}
+.actions{display:flex;gap:10px;align-items:center}
+.icon-btn{width:40px;height:40px;border-radius:50%;border:1px solid var(--border);background:var(--card);color:var(--text);cursor:pointer;display:grid;place-items:center;font-size:1.1rem}
+.btn{display:inline-flex;align-items:center;gap:8px;padding:12px 22px;border-radius:999px;font-weight:700;border:0;cursor:pointer;font-family:inherit;font-size:.95rem;transition:transform .2s,box-shadow .2s}
+.btn:hover{transform:translateY(-2px)}
+.btn-primary{background:linear-gradient(90deg,var(--primary),var(--primary2));color:#fff;box-shadow:0 8px 22px rgba(10,123,220,.35)}
+.btn-red{background:var(--accent);color:#fff;box-shadow:0 8px 22px rgba(230,57,70,.35)}
+.btn-ghost{background:var(--card);color:var(--text);border:1px solid var(--border)}
+.menu-btn{display:none}
+
+/* hero */
+.hero{position:relative;padding:70px 0 90px;background:radial-gradient(900px 400px at 85% 0%,rgba(24,182,232,.25),transparent 60%),radial-gradient(700px 400px at 0% 100%,rgba(10,123,220,.18),transparent 60%),var(--bg)}
+.hero-grid{display:grid;grid-template-columns:1.1fr .9fr;gap:40px;align-items:center}
+.badge{display:inline-block;padding:6px 14px;border-radius:999px;background:var(--card);border:1px solid var(--border);font-size:.85rem;font-weight:600;color:var(--primary);margin-bottom:18px}
+.hero h1{font-size:clamp(2.2rem,5.5vw,4rem);margin-bottom:10px}
+.hero h2.sub{font-size:clamp(1.3rem,3vw,2rem);color:var(--muted);font-weight:700;margin-bottom:16px}
+.hero p{color:var(--muted);max-width:520px;margin-bottom:28px;font-size:1.05rem}
+.cta{display:flex;flex-wrap:wrap;gap:12px;margin-bottom:34px}
+.stats{display:flex;gap:30px;flex-wrap:wrap}
+.stats b{display:block;font-size:1.6rem;color:var(--primary)}
+.stats span{font-size:.85rem;color:var(--muted)}
+.hero-art{position:relative;display:flex;justify-content:center;align-items:flex-end;gap:10px;min-height:380px}
+.hero-art::before{content:"";position:absolute;inset:8% 5% 0;border-radius:40% 60% 55% 45%/50% 45% 55% 50%;background:linear-gradient(160deg,rgba(24,182,232,.35),rgba(10,123,220,.12));animation:morph 9s ease-in-out infinite}
+@keyframes morph{50%{border-radius:60% 40% 45% 55%/45% 55% 45% 55%}}
+.hero-art svg{position:relative;filter:drop-shadow(0 14px 18px rgba(10,123,220,.3));animation:float 5s ease-in-out infinite}
+.hero-art svg:nth-child(2){animation-delay:-1.2s}.hero-art svg:nth-child(3){animation-delay:-2.4s}.hero-art svg:nth-child(4){animation-delay:-3.6s}
+@keyframes float{50%{transform:translateY(-12px)}}
+.drop{position:absolute;border-radius:50% 50% 50% 0;transform:rotate(-45deg);background:linear-gradient(135deg,var(--primary2),var(--primary));opacity:.5;animation:float 6s ease-in-out infinite}
+
+/* wave */
+.wave{display:block;width:100%;height:60px;margin-top:-1px}
+.wave path{fill:var(--bg2)}
+
+/* section heads */
+.alt{background:var(--bg2)}
+.head{text-align:center;margin-bottom:44px}
+.head small{color:var(--primary);font-weight:700;letter-spacing:.12em;text-transform:uppercase}
+.head h2{font-size:clamp(1.7rem,3.6vw,2.5rem);margin:6px 0 10px}
+.head p{color:var(--muted);max-width:560px;margin:auto}
+
+/* products */
+.products{display:grid;grid-template-columns:repeat(4,1fr);gap:20px}
+.card{background:var(--card);border:1px solid var(--border);border-radius:22px;padding:26px 20px;text-align:center;box-shadow:var(--shadow);transition:transform .25s}
+.card:hover{transform:translateY(-8px)}
+.card .pic{height:190px;display:flex;align-items:flex-end;justify-content:center;margin-bottom:16px}
+.card h3{font-size:1.3rem}
+.card p{color:var(--muted);font-size:.9rem;margin:4px 0 14px}
+.tag{display:inline-block;background:linear-gradient(90deg,var(--accent),#ff7a59);color:#fff;font-weight:700;border-radius:999px;padding:3px 16px;font-size:.85rem;margin-bottom:14px}
+.card .btn{width:100%;justify-content:center;padding:10px}
+
+/* features */
+.features{display:grid;grid-template-columns:repeat(4,1fr);gap:20px}
+.feat{background:var(--card);border:1px solid var(--border);border-radius:20px;padding:26px}
+.feat .ic{font-size:1.8rem;width:56px;height:56px;border-radius:16px;display:grid;place-items:center;background:linear-gradient(135deg,rgba(24,182,232,.2),rgba(10,123,220,.2));margin-bottom:14px}
+.feat h3{font-size:1.1rem;margin-bottom:6px}
+.feat p{color:var(--muted);font-size:.92rem}
+
+/* steps */
+.steps{display:grid;grid-template-columns:repeat(3,1fr);gap:24px;counter-reset:s}
+.step{position:relative;background:var(--card);border:1px solid var(--border);border-radius:20px;padding:30px 26px;counter-increment:s}
+.step::before{content:counter(s);position:absolute;top:-18px;left:24px;width:40px;height:40px;border-radius:50%;background:linear-gradient(135deg,var(--primary),var(--primary2));color:#fff;font-weight:800;display:grid;place-items:center}
+.step h3{margin-bottom:6px;font-size:1.1rem}
+.step p{color:var(--muted);font-size:.92rem}
+
+/* order / contact */
+.contact{display:grid;grid-template-columns:1fr 1fr;gap:28px;align-items:start}
+.panel{background:var(--card);border:1px solid var(--border);border-radius:24px;padding:30px;box-shadow:var(--shadow)}
+.panel h3{font-size:1.4rem;margin-bottom:16px}
+.info{display:flex;gap:14px;align-items:center;padding:14px;border:1px solid var(--border);border-radius:16px;margin-bottom:12px;background:var(--bg)}
+.info .ic{width:46px;height:46px;border-radius:14px;display:grid;place-items:center;background:linear-gradient(135deg,var(--primary),var(--primary2));color:#fff;font-size:1.2rem;flex:none}
+.info small{color:var(--muted);display:block;font-size:.8rem}
+.info b{font-size:1.05rem}
+form{display:grid;gap:14px}
+label{font-size:.85rem;font-weight:600;color:var(--muted)}
+input,select,textarea{width:100%;padding:12px 14px;border-radius:12px;border:1px solid var(--border);background:var(--bg);color:var(--text);font:inherit;margin-top:4px}
+input:focus,select:focus,textarea:focus{outline:2px solid var(--primary);border-color:transparent}
+.row2{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.note{font-size:.8rem;color:var(--muted)}
+
+footer{background:#06101d;color:#b7cbe3;padding:40px 0 90px;text-align:center}
+footer b{color:#fff}
+.owner{color:var(--gold);font-weight:700}
+
+/* floating buttons */
+.float{position:fixed;right:16px;bottom:16px;display:flex;flex-direction:column;gap:10px;z-index:60}
+.float a{width:54px;height:54px;border-radius:50%;display:grid;place-items:center;font-size:1.5rem;color:#fff;box-shadow:0 8px 20px rgba(0,0,0,.3)}
+.float .wa{background:#25d366}.float .call{background:var(--accent)}
+
+.reveal{opacity:0;transform:translateY(24px);transition:opacity .7s,transform .7s}
+.reveal.in{opacity:1;transform:none}
+
+@media(max-width:900px){
+  .hero-grid,.contact{grid-template-columns:1fr}
+  .hero-art{min-height:300px}
+  .products,.features{grid-template-columns:repeat(2,1fr)}
+  .steps{grid-template-columns:1fr;gap:34px}
+  .links{display:none;position:absolute;top:66px;left:0;right:0;flex-direction:column;gap:0;background:var(--card);border-bottom:1px solid var(--border)}
+  .links.open{display:flex}
+  .links a{padding:14px 20px;border-top:1px solid var(--border)}
+  .menu-btn{display:grid}
+  .nav .btn{display:none}
+}
+@media(max-width:520px){
+  section{padding:56px 0}
+  .products,.features{grid-template-columns:1fr}
+  .row2{grid-template-columns:1fr}
+}
+/* ---- extra responsive fixes ---- */
+html{-webkit-text-size-adjust:100%}
+img,svg{max-width:100%}
+.hero-art svg{height:auto;flex:0 1 auto;min-width:0}
+.hero-art{width:100%;overflow:hidden;padding-bottom:6px}
+.card .pic svg{max-width:100%;max-height:100%}
+.panel,.card,.feat,.step{min-width:0}
+.info>div{min-width:0}
+.info b{word-break:break-word}
+.btn{white-space:normal;text-align:center;justify-content:center}
+input,select,textarea{font-size:16px;max-width:100%}
+.menu-btn{flex:none}
+.links{z-index:5}
+
+@media(max-width:900px){
+  .hero{padding:44px 0 70px}
+  .hero-grid{gap:28px}
+  .hero p{max-width:none}
+  .hero-art{min-height:0;height:min(62vw,320px);gap:6px}
+  .hero-art svg:nth-of-type(1){width:15%}
+  .hero-art svg:nth-of-type(2){width:18%}
+  .hero-art svg:nth-of-type(3){width:21%}
+  .hero-art svg:nth-of-type(4){width:34%}
+  .actions .icon-btn{width:38px;height:38px}
+}
+@media(max-width:600px){
+  .wrap{width:calc(100% - 28px)}
+  section{padding:48px 0}
+  .nav{height:60px}
+  .logo{font-size:1rem}
+  .logo i{width:30px;height:30px}
+  .links{top:60px}
+  .hero{padding:32px 0 56px}
+  .cta{flex-direction:column}
+  .cta .btn{width:100%}
+  .stats{gap:18px;justify-content:space-between}
+  .stats b{font-size:1.3rem}
+  .head{margin-bottom:32px}
+  .panel{padding:20px}
+  .card{padding:22px 16px}
+  .card .pic{height:170px}
+  .feat{padding:20px}
+  .float a{width:48px;height:48px;font-size:1.3rem}
+  .float{right:12px;bottom:12px}
+  footer{padding-bottom:90px}
+}
+@media(max-width:360px){
+  .logo span,.logo{font-size:.9rem}
+  .badge{font-size:.78rem}
+}
+@media(prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}}
+</style>
+</head>
+<body>
+
+<!-- bottle symbols -->
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <defs>
+    <linearGradient id="gw" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#7fd4f7"/><stop offset=".5" stop-color="#d9f3ff"/><stop offset="1" stop-color="#5bb8ee"/>
+    </linearGradient>
+    <linearGradient id="gc" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#1e6fd9"/><stop offset="1" stop-color="#0b3f94"/></linearGradient>
+    <symbol id="bottle" viewBox="0 0 100 220">
+      <rect x="36" y="2" width="28" height="18" rx="4" fill="url(#gc)"/>
+      <path d="M38 20h24v14c0 8 22 14 22 40v132c0 8-6 12-14 12H30c-8 0-14-4-14-12V74c0-26 22-32 22-40z" fill="url(#gw)" stroke="#4aa6e0" stroke-width="2"/>
+      <rect x="16" y="96" width="68" height="62" fill="#fff" opacity=".95"/>
+      <path d="M16 140q17-14 34 0t34 0v18H16z" fill="#1e6fd9" opacity=".85"/>
+      <text x="50" y="121" text-anchor="middle" font-size="17" font-weight="800" fill="#1b2f8a" font-family="Noto Sans Devanagari,sans-serif">सलोनी</text>
+      <text x="50" y="134" text-anchor="middle" font-size="7" font-weight="700" fill="#1b2f8a" font-family="Poppins,sans-serif">Drinking Water</text>
+      <path d="M26 48c-3 20-4 40-3 60" stroke="#fff" stroke-width="4" stroke-linecap="round" opacity=".55" fill="none"/>
+    </symbol>
+    <symbol id="jar" viewBox="0 0 140 200">
+      <rect x="48" y="2" width="44" height="22" rx="5" fill="url(#gc)"/>
+      <path d="M52 24h36c0 10 40 10 40 40v118c0 10-8 16-18 16H30c-10 0-18-6-18-16V64c0-30 40-30 40-40z" fill="url(#gw)" stroke="#4aa6e0" stroke-width="2"/>
+      <rect x="12" y="82" width="116" height="64" fill="#fff" opacity=".95"/>
+      <path d="M12 128q29-16 58 0t58 0v18H12z" fill="#1e6fd9" opacity=".85"/>
+      <text x="70" y="108" text-anchor="middle" font-size="24" font-weight="800" fill="#1b2f8a" font-family="Noto Sans Devanagari,sans-serif">सलोनी</text>
+      <text x="70" y="121" text-anchor="middle" font-size="9" font-weight="700" fill="#1b2f8a" font-family="Poppins,sans-serif">Drinking Water</text>
+      <path d="M30 60c-6 30-8 70-6 110" stroke="#fff" stroke-width="5" stroke-linecap="round" opacity=".5" fill="none"/>
+    </symbol>
+  </defs>
+</svg>
+
+<header>
+  <div class="wrap nav">
+    <a href="#home" class="logo">
+      <i><svg width="16" height="16" viewBox="0 0 24 24" fill="#fff"><circle cx="12" cy="12" r="6"/></svg></i>
+      सलोनी वॉटर
+    </a>
+    <nav class="links" id="links">
+      <a href="#home">होम</a>
+      <a href="#products">प्रोडक्ट्स</a>
+      <a href="#why">हमें क्यों चुनें</a>
+      <a href="#how">ऑर्डर कैसे करें</a>
+      <a href="#contact">संपर्क</a>
+    </nav>
+    <div class="actions">
+      <button class="icon-btn" id="theme" aria-label="थीम बदलें" title="Dark / Light">🌙</button>
+      <a class="btn btn-red" href="tel:+918789258851">📞 कॉल करें</a>
+      <button class="icon-btn menu-btn" id="menu" aria-label="मेन्यू">☰</button>
+    </div>
+  </div>
+</header>
+
+<main>
+<section class="hero" id="home">
+  <div class="wrap hero-grid">
+    <div>
+      <span class="badge">💧 शुद्धता में विश्वास…</span>
+      <h1 class="grad">सलोनी<br>वॉटर सप्लायर</h1>
+      <h2 class="sub">सेहत के लिए सर्वश्रेष्ठ…</h2>
+      <p>इंदौर, बक्सर में शुद्ध और साफ़ पीने का पानी – 250 ml से 20 लीटर जार तक। सीधे आपके घर, दुकान और ऑफिस तक डिलीवरी।</p>
+      <div class="cta">
+        <a class="btn btn-red" href="tel:+918789258851">📞 अभी संपर्क करें</a>
+        <a class="btn btn-primary" href="#order">🛒 ऑर्डर करें</a>
+      </div>
+      <div class="stats">
+        <div><b>4</b><span>साइज़ उपलब्ध</span></div>
+        <div><b>100%</b><span>शुद्ध पानी</span></div>
+        <div><b>🏠</b><span>होम डिलीवरी</span></div>
+      </div>
+    </div>
+    <div class="hero-art" aria-hidden="true">
+      <span class="drop" style="width:22px;height:22px;top:6%;left:8%"></span>
+      <span class="drop" style="width:14px;height:14px;top:22%;right:6%;animation-delay:-2s"></span>
+      <svg width="70" height="150" viewBox="0 0 100 220"><use href="#bottle"/></svg>
+      <svg width="85" height="190" viewBox="0 0 100 220"><use href="#bottle"/></svg>
+      <svg width="100" height="225" viewBox="0 0 100 220"><use href="#bottle"/></svg>
+      <svg width="190" height="270" viewBox="0 0 140 200"><use href="#jar"/></svg>
+    </div>
+  </div>
+</section>
+<svg class="wave" viewBox="0 0 1440 60" preserveAspectRatio="none"><path d="M0 30c240 40 480 40 720 10s480-30 720 0v20H0z"/></svg>
+
+<section class="alt" id="products" style="padding-top:30px">
+  <div class="wrap">
+    <div class="head reveal">
+      <small>हमारे प्रोडक्ट्स</small>
+      <h2>हर ज़रूरत के लिए <span class="grad">सलोनी ड्रिंकिंग वॉटर</span></h2>
+      <p>अपनी ज़रूरत के हिसाब से बोतल या जार चुनें।</p>
+    </div>
+    <div class="products">
+      <article class="card reveal">
+        <div class="pic"><svg width="70" height="154" viewBox="0 0 100 220"><use href="#bottle"/></svg></div>
+        <span class="tag">250 ml</span>
+        <h3>छोटी बोतल</h3><p>सफ़र, पार्टी और फंक्शन के लिए</p>
+        <a class="btn btn-ghost" href="#order" data-pick="250 ml बोतल">ऑर्डर करें</a>
+      </article>
+      <article class="card reveal">
+        <div class="pic"><svg width="82" height="180" viewBox="0 0 100 220"><use href="#bottle"/></svg></div>
+        <span class="tag">500 ml</span>
+        <h3>मीडियम बोतल</h3><p>रोज़ की ज़रूरत के लिए</p>
+        <a class="btn btn-ghost" href="#order" data-pick="500 ml बोतल">ऑर्डर करें</a>
+      </article>
+      <article class="card reveal">
+        <div class="pic"><svg width="92" height="202" viewBox="0 0 100 220"><use href="#bottle"/></svg></div>
+        <span class="tag">1 Liter</span>
+        <h3>1 लीटर बोतल</h3><p>घर, ऑफिस और दुकान के लिए</p>
+        <a class="btn btn-ghost" href="#order" data-pick="1 लीटर बोतल">ऑर्डर करें</a>
+      </article>
+      <article class="card reveal">
+        <div class="pic"><svg width="150" height="214" viewBox="0 0 140 200"><use href="#jar"/></svg></div>
+        <span class="tag">20 Liter</span>
+        <h3>20 लीटर जार</h3><p>पूरे परिवार और ऑफिस के लिए</p>
+        <a class="btn btn-ghost" href="#order" data-pick="20 लीटर जार">ऑर्डर करें</a>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section id="why">
+  <div class="wrap">
+    <div class="head reveal">
+      <small>हमें क्यों चुनें</small>
+      <h2>शुद्धता पर <span class="grad">पूरा भरोसा</span></h2>
+    </div>
+    <div class="features">
+      <div class="feat reveal"><div class="ic">💧</div><h3>शुद्ध पानी</h3><p>साफ़, ताज़ा और सुरक्षित पीने का पानी।</p></div>
+      <div class="feat reveal"><div class="ic">🚚</div><h3>घर तक डिलीवरी</h3><p>फ़ोन करें, पानी सीधे आपके दरवाज़े पर।</p></div>
+      <div class="feat reveal"><div class="ic">📦</div><h3>हर साइज़</h3><p>250 ml से 20 लीटर जार तक सारे विकल्प।</p></div>
+      <div class="feat reveal"><div class="ic">🤝</div><h3>भरोसेमंद सेवा</h3><p>समय पर सप्लाई और अच्छा व्यवहार।</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="alt" id="how">
+  <div class="wrap">
+    <div class="head reveal">
+      <small>ऑर्डर कैसे करें</small>
+      <h2>सिर्फ़ <span class="grad">3 आसान स्टेप</span></h2>
+    </div>
+    <div class="steps">
+      <div class="step reveal"><h3>कॉल या WhatsApp करें</h3><p>8789258851 या 7091852851 पर संपर्क करें।</p></div>
+      <div class="step reveal"><h3>साइज़ और मात्रा बताएं</h3><p>बोतल या जार चुनें और अपना पता बताएं।</p></div>
+      <div class="step reveal"><h3>घर पर पानी पाएं</h3><p>हम जल्द से जल्द आपके घर पहुँचा देंगे।</p></div>
+    </div>
+  </div>
+</section>
+
+<section id="contact">
+  <div class="wrap">
+    <div class="head reveal">
+      <small>संपर्क करें</small>
+      <h2>घर पर पानी लेने के लिए <span class="grad">संपर्क करें</span></h2>
+    </div>
+    <div class="contact">
+      <div class="panel reveal">
+        <h3>संपर्क जानकारी</h3>
+        <a class="info" href="tel:+918789258851"><span class="ic">📞</span><div><small>फ़ोन 1</small><b>8789258851</b></div></a>
+        <a class="info" href="tel:+917091852851"><span class="ic">📞</span><div><small>फ़ोन 2</small><b>7091852851</b></div></a>
+        <a class="info" href="https://wa.me/918789258851" target="_blank" rel="noopener"><span class="ic" style="background:#25d366">💬</span><div><small>WhatsApp</small><b>चैट शुरू करें</b></div></a>
+        <div class="info"><span class="ic">📍</span><div><small>पता</small><b>इंदौर, बक्सर</b></div></div>
+        <div class="info"><span class="ic">👤</span><div><small>प्रोप्राइटर</small><b>प्रो. गुड्डू कुमार</b></div></div>
+      </div>
+      <div class="panel reveal" id="order">
+        <h3>ऑनलाइन ऑर्डर फ़ॉर्म</h3>
+        <form id="form">
+          <div><label for="name">आपका नाम</label><input id="name" required placeholder="नाम लिखें"></div>
+          <div><label for="phone">मोबाइल नंबर</label><input id="phone" type="tel" inputmode="numeric" pattern="[0-9]{10}" required placeholder="10 अंकों का नंबर"></div>
+          <div class="row2">
+            <div><label for="size">साइज़</label>
+              <select id="size">
+                <option>250 ml बोतल</option><option>500 ml बोतल</option><option>1 लीटर बोतल</option><option selected>20 लीटर जार</option>
+              </select></div>
+            <div><label for="qty">मात्रा</label><input id="qty" type="number" min="1" value="1" required></div>
+          </div>
+          <div><label for="addr">डिलीवरी का पता</label><textarea id="addr" rows="2" required placeholder="पूरा पता लिखें"></textarea></div>
+          <button class="btn btn-primary" type="submit" style="justify-content:center">💬 WhatsApp पर ऑर्डर भेजें</button>
+          <div id="wa-fallback"></div>
+          <p class="note">बटन दबाने पर आपका ऑर्डर WhatsApp में खुलेगा, वहाँ से भेज दें।</p>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <p><b>सलोनी वॉटर सप्लायर</b> – शुद्धता में विश्वास… सेहत के लिए सर्वश्रेष्ठ…</p>
+    <p style="margin-top:6px">प्रोप्राइटर: <span class="owner">प्रो. गुड्डू कुमार</span> • इंदौर, बक्सर • 8789258851 / 7091852851</p>
+    <p style="margin-top:10px;font-size:.8rem;opacity:.7">© <span id="yr"></span> सलोनी वॉटर सप्लायर। सर्वाधिकार सुरक्षित।</p>
+  </div>
+</footer>
+
+<div class="float">
+  <a class="wa" href="https://wa.me/918789258851" target="_blank" rel="noopener" aria-label="WhatsApp">💬</a>
+  <a class="call" href="tel:+918789258851" aria-label="कॉल करें">📞</a>
+</div>
+
+<script>
+(function(){
+  var root=document.documentElement, btn=document.getElementById('theme');
+  var saved=null;
+  try{saved=localStorage.getItem('saloni-theme')}catch(e){}
+  var theme=saved||(window.matchMedia&&matchMedia('(prefers-color-scheme: dark)').matches?'dark':'light');
+  function apply(t){root.setAttribute('data-theme',t);btn.textContent=t==='dark'?'☀️':'🌙';}
+  apply(theme);
+  btn.addEventListener('click',function(){
+    theme=theme==='dark'?'light':'dark';apply(theme);
+    try{localStorage.setItem('saloni-theme',theme)}catch(e){}
+  });
+
+  var links=document.getElementById('links');
+  document.getElementById('menu').addEventListener('click',function(){links.classList.toggle('open')});
+  links.addEventListener('click',function(){links.classList.remove('open')});
+
+  document.getElementById('yr').textContent=new Date().getFullYear();
+
+  document.querySelectorAll('[data-pick]').forEach(function(a){
+    a.addEventListener('click',function(){document.getElementById('size').value=a.dataset.pick});
+  });
+
+  document.getElementById('form').addEventListener('submit',function(e){
+    e.preventDefault();
+    var g=function(i){return document.getElementById(i).value.trim()};
+    var msg='नमस्ते, मैं सलोनी वॉटर सप्लायर से पानी ऑर्डर करना चाहता/चाहती हूँ।\n'+
+      'नाम: '+g('name')+'\nमोबाइल: '+g('phone')+'\nसाइज़: '+g('size')+'\nमात्रा: '+g('qty')+'\nपता: '+g('addr');
+    var url='https://api.whatsapp.com/send?phone=918789258851&text='+encodeURIComponent(msg);
+    var fb=document.getElementById('wa-fallback');
+    fb.innerHTML='';
+    var a=document.createElement('a');
+    a.href=url;a.target='_blank';a.rel='noopener';
+    a.className='btn btn-primary';a.style.justifyContent='center';
+    a.textContent='✅ WhatsApp खोलने के लिए यहाँ दबाएं';
+    fb.appendChild(a);
+    var p=document.createElement('p');p.className='note';p.style.marginTop='8px';
+    p.textContent='अगर WhatsApp अपने आप न खुले तो ऊपर का बटन दबाएं, या यह संदेश कॉपी करके 8789258851 पर भेजें।';
+    fb.appendChild(p);
+    try{navigator.clipboard.writeText(msg)}catch(err){}
+    try{a.click()}catch(err){}
+  });
+
+  var io=new IntersectionObserver(function(es){es.forEach(function(x){if(x.isIntersecting){x.target.classList.add('in');io.unobserve(x.target)}})},{threshold:.12});
+  document.querySelectorAll('.reveal').forEach(function(el){io.observe(el)});
+})();
+</script>
+</body>
+</html>
